@@ -1,1 +1,314 @@
-/* Add you CSS here */
+/* ========================================
+   CYBERPUNK + LOFI FUSION AESTHETIC
+   Modern, calm, with cool neon accents
+   ======================================== */
+
+/* RESET: Make the page start fresh */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY: Dark background with calm vibes */
+body {
+  /* Dark cyberpunk background */
+  background-color: #0f0f1e;
+  /* Soft, readable text color */
+  color: #e0e0e0;
+  /* Clean, modern font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Add space between lines for readability */
+  line-height: 1.6;
+}
+
+/* ========================================
+   HERO SECTION: Your main introduction
+   ======================================== */
+.hero {
+  /* Full screen height for impact */
+  min-height: 100vh;
+  /* Center everything */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Subtle gradient background for depth */
+  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+  /* Padding for spacing on mobile */
+  padding: 20px;
+}
+
+.hero-content {
+  /* Center all items vertically */
+  text-align: center;
+  /* Maximum width to keep it readable */
+  max-width: 600px;
+}
+
+.hero-title {
+  /* Big, bold, and eye-catching */
+  font-size: 3.5rem;
+  /* Neon cyan color for cyberpunk feel */
+  color: #00d9ff;
+  /* Glow effect for cool factor */
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+  /* Space below the title */
+  margin-bottom: 30px;
+  /* Smooth animation when page loads */
+  animation: fadeInDown 1s ease-out;
+}
+
+.profile-pic {
+  /* Make it a circle */
+  border-radius: 50%;
+  /* Size of the picture */
+  width: 200px;
+  height: 200px;
+  /* Nice border with neon accent */
+  border: 3px solid #00d9ff;
+  /* Space below picture */
+  margin-bottom: 20px;
+  /* Smooth animation */
+  animation: fadeInUp 1s ease-out 0.2s both;
+  /* Make images fit nicely */
+  object-fit: cover;
+}
+
+.hero-subtitle {
+  /* Medium size for subtitle */
+  font-size: 1.3rem;
+  /* Soft color that's not too bright */
+  color: #b0b0c0;
+  /* Space above the subtitle */
+  margin-top: 20px;
+  /* Smooth animation */
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+/* ========================================
+   BIO SECTION: Tell your story
+   ======================================== */
+.bio {
+  /* Padding for breathing room */
+  padding: 80px 20px;
+  /* Light background for contrast */
+  background-color: #1a1a2e;
+  /* Small border at top for visual interest */
+  border-top: 2px solid #00d9ff;
+}
+
+.bio-content {
+  /* Maximum width for readability */
+  max-width: 800px;
+  /* Center it on the page */
+  margin: 0 auto;
+}
+
+.bio h2 {
+  /* Section heading size */
+  font-size: 2.5rem;
+  /* Neon accent color */
+  color: #00d9ff;
+  /* Glow effect */
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+  /* Space below heading */
+  margin-bottom: 20px;
+}
+
+.bio p {
+  /* Comfortable reading size */
+  font-size: 1.1rem;
+  /* Soft color for calm feel */
+  color: #d0d0e0;
+  /* Line spacing for easier reading */
+  line-height: 1.8;
+}
+
+/* ========================================
+   PROJECTS SECTION: Showcase your work
+   ======================================== */
+.projects {
+  /* Padding for spacing */
+  padding: 80px 20px;
+  /* Dark background like main theme */
+  background-color: #0f0f1e;
+}
+
+.projects-content {
+  /* Center content */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  /* Section heading */
+  font-size: 2.5rem;
+  /* Neon cyan color */
+  color: #00d9ff;
+  /* Glow effect */
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+  /* Space below heading */
+  margin-bottom: 50px;
+  /* Center the heading */
+  text-align: center;
+}
+
+.projects-grid {
+  /* Create a flexible grid layout */
+  display: flex;
+  /* Wrap items to next line */
+  flex-wrap: wrap;
+  /* Space between cards */
+  gap: 30px;
+  /* Center the grid */
+  justify-content: center;
+}
+
+.project-card {
+  /* Card takes up space */
+  width: 300px;
+  /* Dark background for card */
+  background-color: #1a1a2e;
+  /* Subtle border with neon accent */
+  border: 2px solid #00d9ff;
+  /* Rounded corners for modern look */
+  border-radius: 8px;
+  /* Internal spacing */
+  padding: 20px;
+  /* Smooth hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  /* Lift up slightly on hover */
+  transform: translateY(-5px);
+  /* Glow effect on hover */
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
+}
+
+.project-image {
+  /* Fill the card width */
+  width: 100%;
+  /* Automatic height */
+  height: auto;
+  /* Rounded corners to match card */
+  border-radius: 6px;
+  /* Space below image */
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  /* Project title size */
+  font-size: 1.4rem;
+  /* Bright cyan for pop */
+  color: #00d9ff;
+  /* Space below title */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  /* Description text */
+  font-size: 0.95rem;
+  /* Soft gray color */
+  color: #b0b0c0;
+  /* Space below description */
+  margin-bottom: 15px;
+}
+
+.project-link {
+  /* Display as button */
+  display: inline-block;
+  /* Button styling */
+  padding: 10px 20px;
+  /* Neon background */
+  background-color: #00d9ff;
+  /* Dark text on light background */
+  color: #0f0f1e;
+  /* Remove default link underline */
+  text-decoration: none;
+  /* Rounded corners */
+  border-radius: 4px;
+  /* Smooth transition for hover */
+  transition: all 0.3s ease;
+  /* Make text bold */
+  font-weight: bold;
+}
+
+.project-link:hover {
+  /* Slightly darker on hover */
+  background-color: #00b8cc;
+  /* Add a subtle glow */
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.6);
+}
+
+/* ========================================
+   FOOTER: Bottom of the page
+   ======================================== */
+footer {
+  /* Padding for spacing */
+  padding: 30px 20px;
+  /* Dark background */
+  background-color: #0a0a15;
+  /* Center text */
+  text-align: center;
+  /* Small border at top */
+  border-top: 2px solid #00d9ff;
+}
+
+footer p {
+  /* Soft gray text */
+  color: #808090;
+  /* Small font size */
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   ANIMATIONS: Smooth entrance effects
+   ======================================== */
+@keyframes fadeInDown {
+  from {
+    /* Start invisible and higher */
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    /* End visible at normal position */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    /* Start invisible and lower */
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    /* End visible at normal position */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN: Make it look good on phones
+   ======================================== */
+@media (max-width: 768px) {
+  /* Make hero title smaller on mobile */
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  /* Make section headings smaller on mobile */
+  .bio h2,
+  .projects h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Reduce padding on mobile */
+  .bio,
+  .projects {
+    padding: 50px 20px;
+  }
+}
