@@ -65,7 +65,7 @@ body {
   width: 200px;
   height: 200px;
   /* Nice border with neon accent */
-  border: 3px solid #00d9ff;
+  border: 3px solid #9900ff;
   /* Space below picture */
   margin-bottom: 20px;
   /* Smooth animation */
@@ -170,7 +170,7 @@ body {
   /* Dark background for card */
   background-color: #1a1a2e;
   /* Subtle border with neon accent */
-  border: 2px solid #00d9ff;
+  border: 2px solid #9900ff;
   /* Rounded corners for modern look */
   border-radius: 8px;
   /* Internal spacing */
