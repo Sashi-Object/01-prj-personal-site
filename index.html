@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Natalie Bonilla - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVIGATION: Links to different sections -->
   <nav>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
       <li><a href="#bio">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
   </nav>
-</head>
-<body>
+
   <!-- HERO SECTION: Main introduction with name and profile picture -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-content">
       <!-- Add your name here -->
       <h1 class="hero-title">Natalie Bonilla</h1>
@@ -29,19 +32,33 @@
   </section>
 
   <!-- BIO SECTION: Tell people about yourself -->
-  <section class="bio">
+  <section id="bio" class="bio">
     <div class="bio-content">
       <h2>About Me</h2>
       <p>
-        Hello! I'm a web development student learning to build beautiful and functional websites. 
-        I'm passionate about creating digital experiences that blend creativity with clean code. 
-        When I'm not coding, you'll find me writing creative stories or listening to music for more inspiration.
+        Hello! My name is Natalie Bonilla and I'm a computer science student at the University of Utah learning to build beautiful and functional websites. 
+        I'm passionate about creating digital experiences that blend creativity with clean code. Moreover, I love exploring new technologies and continuously improving my skills in web development.
+        When I'm not coding, you'll find me writing creative stories or listening to music for inspiration.
       </p>
     </div>
   </section>
 
+  <!-- SKILLS SECTION: Show off your technical skills -->
+  <section id="skills" class="skills">
+    <div class="skills-content">
+      <h2>Skills</h2>
+      <p>Here are some of the skills I'm developing in my web development journey:</p>
+      <ul class="skills-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Git (Version Control)</li>
+        <li>Problem Solving</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- PROJECTS SECTION: Show off the projects you build in class -->
-  <section class="projects">
+  <section id="projects" class="projects">
     <div class="projects-content">
       <h2>Projects</h2>
       
@@ -49,21 +66,30 @@
       <div class="projects-grid">
         <!-- EXAMPLE PROJECT CARD: You can copy this structure for each new project -->
         <div class="project-card">
-          <img src="img/project-placeholder.jpg" alt="Project image" class="project-image">
-          <h3>Project Name</h3>
-          <p>A brief description of what this project does and what you learned while building it.</p>
-          <a href="#" class="project-link">View Project</a>
+          <img src="img/mclaren.jpg" alt="Project image" class="project-image">
+          <h3>Formula 1 Driver Website</h3>
+          <p>Currently working on a side project that blends my favorite motor sport, Formula 1, with my web development skills. A WIP website that provides information about F1 drivers, teams, and races.
+          </p>
+          <a href="http://localhost:5173/" class="project-link">View Project</a>
         </div>
 
         <!-- Copy and paste the above card structure here for more projects -->
-        
+        <div class="project-card">
+          <img src="img/snakeicon.png" alt="Project image" class="project-image">
+          <h3>Snake Game</h3>
+          <p>A classic snake game built using HTML, CSS, and C#. Navigate the snake to eat food and grow longer without hitting the walls or yourself. This is a solution to a Homework assignment so upon request I can provide the code. 
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER: Simple footer for later use -->
   <footer>
-    <p>&copy; 2026 My Portfolio. Made with code and creativity.</p>
+    <h2>Contact Me!</h2>
+    <li><a id="linkedin-link" href="https://www.linkedin.com/in/natalie-bonilla-75a945243/">LinkedIn</a></li>
+    <li>Email: nataliebonilla2gmail.com</li>
+    <li>Phone Number: 714-468-7019</li>
   </footer>
 </body>
 </html>

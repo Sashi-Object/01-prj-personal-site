@@ -20,6 +20,58 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* Add space between lines for readability */
   line-height: 1.6;
+  /* Account for fixed nav */
+  padding-top: 70px;
+}
+
+/* ========================================
+   NAVIGATION: Links to different sections
+   ======================================== */
+nav {
+  /* Fixed at the top */
+  position: sticky;
+  /* Full width */
+  width: 100%;
+  /* Dark background */
+  background-color: #0a0a15;
+  /* Border at bottom */
+  border-bottom: 2px solid #00d9ff;
+  /* Z-index to stay on top */
+  z-index: 1000;
+  /* Padding */
+  padding: 15px 0;
+}
+
+.nav-links {
+  /* Remove default list styling */
+  list-style: none;
+  /* Center the links */
+  display: flex;
+  justify-content: center;
+  /* Space between links */
+  gap: 30px;
+  /* Remove margin */
+  margin: 0;
+  /* Remove padding */
+  padding: 0;
+}
+
+.nav-links li a {
+  /* Link styling */
+  color: #b0b0c0;
+  /* Remove underline */
+  text-decoration: none;
+  /* Font size */
+  font-size: 1rem;
+  /* Smooth transition */
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  /* Neon color on hover */
+  color: #00d9ff;
+  /* Glow effect */
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
 }
 
 /* ========================================
@@ -122,6 +174,84 @@ body {
   color: #d0d0e0;
   /* Line spacing for easier reading */
   line-height: 1.8;
+}
+
+/* ========================================
+   SKILLS SECTION: Show off your technical skills
+   ======================================== */
+.skills {
+  /* Padding for breathing room */
+  padding: 80px 20px;
+  /* Light background for contrast */
+  background-color: #1a1a2e;
+  /* Small border at top for visual interest */
+  border-top: 2px solid #00d9ff;
+}
+
+.skills-content {
+  /* Maximum width for readability */
+  max-width: 800px;
+  /* Center it on the page */
+  margin: 0 auto;
+}
+
+.skills h2 {
+  /* Section heading size */
+  font-size: 2.5rem;
+  /* Neon accent color */
+  color: #00d9ff;
+  /* Glow effect */
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+  /* Space below heading */
+  margin-bottom: 20px;
+}
+
+.skills p {
+  /* Comfortable reading size */
+  font-size: 1.1rem;
+  /* Soft color for calm feel */
+  color: #d0d0e0;
+  /* Line spacing for easier reading */
+  line-height: 1.8;
+  /* Space below paragraph */
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  /* Remove default list styling */
+  list-style: none;
+  /* Create a flexible grid for skills */
+  display: flex;
+  /* Wrap items */
+  flex-wrap: wrap;
+  /* Space between items */
+  gap: 15px;
+  /* Center the list */
+  justify-content: center;
+}
+
+.skills-list li {
+  /* Skill item styling */
+  background-color: #0f0f1e;
+  /* Neon border */
+  border: 1px solid #00d9ff;
+  /* Rounded corners */
+  border-radius: 20px;
+  /* Padding inside */
+  padding: 10px 20px;
+  /* Soft text color */
+  color: #b0b0c0;
+  /* Font size */
+  font-size: 1rem;
+  /* Smooth hover effect */
+  transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+  /* Glow effect on hover */
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.4);
+  /* Slightly brighter text */
+  color: #d0d0e0;
 }
 
 /* ========================================
@@ -262,6 +392,10 @@ footer p {
   font-size: 0.9rem;
 }
 
+footer a {
+  color: #808090;
+}
+
 /* ========================================
    ANIMATIONS: Smooth entrance effects
    ======================================== */
@@ -295,6 +429,20 @@ footer p {
    RESPONSIVE DESIGN: Make it look good on phones
    ======================================== */
 @media (max-width: 768px) {
+  /* Adjust body padding for mobile */
+  body {
+    padding-top: 60px;
+  }
+
+  /* Make nav links smaller and closer */
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;
+  }
+
   /* Make hero title smaller on mobile */
   .hero-title {
     font-size: 2rem;
@@ -302,13 +450,26 @@ footer p {
 
   /* Make section headings smaller on mobile */
   .bio h2,
+  .skills h2,
   .projects h2 {
     font-size: 1.8rem;
   }
 
   /* Reduce padding on mobile */
   .bio,
+  .skills,
   .projects {
     padding: 50px 20px;
+  }
+
+  /* Make skills list vertical on mobile */
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-list li {
+    width: 200px;
+    text-align: center;
   }
 }
